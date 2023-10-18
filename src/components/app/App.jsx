@@ -70,7 +70,6 @@ const App = () => {
     <div>
       <Menu />
       <Container maxWidth="md" sx={{ marginTop: "60px" }}>
-        this is out of routes
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />

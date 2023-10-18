@@ -71,7 +71,7 @@ const App = () => {
       <Menu />
 
       <Container maxWidth="md" sx={{ marginTop: "60px" }}>
-        this is a line and testing for vercel
+        this is a line and testing for vercel project
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />

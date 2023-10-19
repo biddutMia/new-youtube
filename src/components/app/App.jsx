@@ -66,6 +66,10 @@ const PageNotFound = () => {
   return <div style={{ marginTop: "100px" }}>404 error, page not found</div>;
 };
 
+const Test = () => {
+  return <div>this is a test route</div>;
+};
+
 const App = () => {
   return (
     <div>
@@ -74,8 +78,8 @@ const App = () => {
       <Container maxWidth="md" sx={{ marginTop: "60px" }}>
         this is a line and testing for vercel project
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
+          <Route path="/" element={<Test />} />
+          {/* <Route path="/about" element={<About />} />
           <Route path="*" element={<PageNotFound />} />
           <Route
             path="/player/:playListId"
@@ -84,7 +88,7 @@ const App = () => {
           <Route
             path="/player/:playListId/:videoId"
             element={<ContentAndVideoPlayer />}
-          />
+          /> */}
         </Routes>
       </Container>
     </div>

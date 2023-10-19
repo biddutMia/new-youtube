@@ -2,7 +2,7 @@ import { Stack, Grid, Typography, Box, Button } from "@mui/material";
 import ItemCard from "../recentAndFavoriteItemCard/RecentAndFavoriteItemCard";
 import { useStoreActions, useStoreState } from "easy-peasy";
 import { Link } from "react-router-dom";
-import ContentCheck from "../contentCheck/contentCheck";
+// import ContentCheck from "../contentCheck/contentCheck";
 
 const FavoriteItems = () => {
   const state = useStoreState((state) => state);
@@ -30,10 +30,10 @@ const FavoriteItems = () => {
           </div>
         </Stack>
       </Box>
-
+      {/* 
       {items.length == 0 && (
         <ContentCheck content="There are no favorite items" />
-      )}
+      )} */}
 
       <Grid container sx={{ marginBottom: "20px" }} spacing={1}>
         {items.length != 0 &&

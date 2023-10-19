@@ -1,6 +1,7 @@
 import { Typography } from "@mui/material";
 
 const ContentCheck = ({ content }) => {
+  console.log("hello content", content);
   return (
     <div>
       <Typography

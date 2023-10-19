@@ -7,7 +7,7 @@ import RecentItems from "../recentItems/RecentItems";
 import FavoriteItems from "../favoriteItems/FavoriteItems";
 import ContentAndVideoPlayer from "../videoPlayer/ContentAndVideoPlayer";
 import VideoPlayer from "../videoPlayer/VideoPlayer";
-import ContentCheck from "../contentCheck/contentCheck";
+// import ContentCheck from "../contentCheck/contentCheck";
 
 const text = () => {
   return (
@@ -39,12 +39,13 @@ const Home = () => {
     <div>
       {Object.keys(playLists.data).length == 0 ? (
         <Box>
-          <ContentCheck content={text()} />
+          {/* <ContentCheck content={text()} />
           <VideoPlayer
             sx={{ textAlign: "center" }}
             opts={opts}
             alignment="center"
-          />
+          /> */}
+          hello
         </Box>
       ) : (
         <div>
